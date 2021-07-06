@@ -20,7 +20,7 @@ public class OrderDataHandler {
          while (true) {
              // extract contractId and other contract parameters
              // check on the return code of
-             MarketDataHandler mHandler = new MarketDataHandler();
+             MarketDataHandler mHandler = new MarketDataHandler("0.0.0.0");
              if (mHandler.sendRequest(request) == 1) {
                  // update order book table with the requisite information.
              }
